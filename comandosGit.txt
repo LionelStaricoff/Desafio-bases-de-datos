@@ -1,0 +1,50 @@
+code .                                                         ( abre el visual studio code)
+git add archivo.estensión  archivo.estensión   (todos los necesarios)
+git status
+gite  status -s                                              (lo muestra mas resumido y facil de entender)
+git commit -m "descripsion del commit"
+git push -u origin main
+git push --set-upstream origin main
+ls                                                                      (muestra los archivos que hay)
+git rm archivo.extensión                          (elimina el archibo, luego hay que darle commit y push)
+git restore     --staged archivo.extensión      (recupera un archivo eliminado, luego hay que darle commit y push)
+git mv        archivo    nuevoNombre      (renombra un archivo, luego hay que hacer commit y push)
+git log                                                          (muestra todos los cambios del repositorio, salimos con la letra q)
+git log --oneline                                    (muestra todo mas ordenado)
+git branch                                                (ver en que tama de trabajo estamos)
+git checkout -b nombreRama     (crea una rama nueva)
+git checkout  nombreRama         (cambiamos de rama)
+git merge otraRama                       (fusiona ramas secundarias a la main, debemos estar en la rama main)
+cat archivo                                            (muestra el contenido del archivo en la terminal)
+git reset --hard                               (resetea todos los cambios al ultimo commit)
+git chekout idComit               (regresa la informacion del comit que necesitemos, los id los vemos con el comando git log --oneline)
+git clone git@direccion
+git fetch                                        (descarga el historial de cambios desde github)
+git pull origin main                   (descarga y actualiza los archivos desde el remoto a git, luego de actualizar con fetch)
+
+
+
+
+
+configurar git;
+git --version
+git config --global user.name     "nombre del programador"
+git config --global user.email      email@gmail.com
+git config --global core.editor "code --wait"    (configura el visual studo code)
+git config --global core.autocrlf input       (configura los espacios del codigo de git para windows reemplazamos input por   )
+git config --global -e         (muestra las configuraciones del usuario : nombre, email, editor ,etc)
+git config -h      (muestra los comandos de la consola)
+
+
+subir a github:
+git remote add origin http://direccion de github
+git push -u origin main                                 (para hacerlo hay que configurar usuario: el nuestro y la contraseña que hay que crear desde github)
+
+crear contraseña en github:
+Settings 
+Developer settings
+Personal access tokens
+generate new tokens                                (colocar nombre,  tiempo de expiracion de la clave,  habilitar el alcance del repositorio y generar token)
+copiar y pegar en git la clave
+
+
